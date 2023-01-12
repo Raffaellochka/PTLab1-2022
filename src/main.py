@@ -4,6 +4,8 @@ import sys
 
 from CalcRating import CalcRating
 from TextDataReader import TextDataReader
+from TopStudent import TopStudent
+from YAMLReader import TextDataReaderYAML
 
 
 def get_path_from_arguments(args) -> str:
