@@ -19,11 +19,11 @@ def get_path_from_arguments(args) -> str:
 def main():
     path = get_path_from_arguments(sys.argv[1:])
 
-    reader = TextDataReader()
+    reader = TextDataReaderYAML()
     students = reader.read(path)
     print("Students: ", students)
 
-    rating = CalcRating(students).calc()
+    rating = TopStudent(students).calc()
     print("Rating: ", rating)
 
 
